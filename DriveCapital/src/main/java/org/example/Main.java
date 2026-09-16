@@ -41,9 +41,9 @@ public class Main {
             int[] mostCommonId = getMostCommonPartnerId(partnerContacts);
             try{
                 closestContactPerCompany.add(
-                        companyName
-                                + ": " + Database.partners.get(mostCommonId[0]).getName()
-                                + " (" + mostCommonId[1] + ")"
+                    companyName
+                    + ": " + Database.partners.get(mostCommonId[0]).getName()
+                    + " (" + mostCommonId[1] + ")"
                 );
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(e.getMessage());
