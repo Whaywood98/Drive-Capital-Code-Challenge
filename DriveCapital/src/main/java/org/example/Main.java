@@ -4,12 +4,7 @@ import org.example.database.Database;
 import org.example.database.DbBuilder;
 import org.example.model.Company;
 import org.example.model.Contact;
-import org.example.model.Employee;
-import org.example.model.Partner;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
