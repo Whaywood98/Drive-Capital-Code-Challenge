@@ -39,11 +39,15 @@ public class Main {
                 continue;
             }
             int[] mostCommonId = getMostCommonPartnerId(partnerContacts);
-            closestContactPerCompany.add(
-                    companyName
-                    + ": " + Database.partners.get(mostCommonId[0]).getName()
-                    + " (" + mostCommonId[1] + ")"
-            );
+            try{
+                closestContactPerCompany.add(
+                        companyName
+                                + ": " + Database.partners.get(mostCommonId[0]).getName()
+                                + " (" + mostCommonId[1] + ")"
+                );
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println(e.getMessage());
+            }
         }
         return closestContactPerCompany;
     }
